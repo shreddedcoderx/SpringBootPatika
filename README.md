@@ -27,7 +27,7 @@
 ---
 
 ### Reference Documentation
-* [GitHub](https://github.com/hamitmizrak/KodluyoruzSpringBoot)
+* [GitHub](https://github.com/shreddedcoderx/SpringBootPatika)
 
 * [H2 console](http://localhost:8080/h2-console/l)
 
