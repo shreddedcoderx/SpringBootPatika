@@ -26,6 +26,6 @@ public class BeanDto {
     // end
     public void destroyBeanMethod(){
         log.info("Bean bittikten sonra ben varım.");
-        System.err.println("Bean bittikten sonra çalışacak method.");
+        System.err.println("Bean bittikten sonra çalışacak error method.");
     }
 }

@@ -14,8 +14,6 @@ public class BeanController {
     @Autowired
     BeanConfig beanConfig;
 
-    @Autowired
-    Logger LOG;
 
 
     //    http://localhost:8080/bean/beanDto
