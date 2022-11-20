@@ -6,16 +6,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <script th:src="@{/js/template.js}"></script>
 </head>
 <body class="container">
 <!--start code-->
-<h1 class="text-center text-primary">Thymeleaf.</h1>
-<h2>Normal Thymeleaf-1</h2>
+<h1 class="text-center text-primary">Thymeleaf 3</h1>
+<h2>Normal Thymeleaf-3</h2>
 <h3 th:text="'A normal Thymeleaf-2'"></h3>
 
 <hr>
 <p th:text="${key_value1}"></p>
 <p th:text="${key_value2}"></p>
+<p th:text="${key_value3}"></p>
+
+<a href="/thymeleaf2" class="thymeleaf3">Click me!</a>
 <!--ends code-->
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js">
