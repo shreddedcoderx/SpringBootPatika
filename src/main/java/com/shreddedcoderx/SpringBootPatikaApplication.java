@@ -1,4 +1,4 @@
-package com.shreddedcoderx.springbootpatika;
+package com.shreddedcoderx;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

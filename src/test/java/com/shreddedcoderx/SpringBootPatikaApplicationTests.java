@@ -1,4 +1,4 @@
-package com.shreddedcoderx.springbootpatika;
+package com.shreddedcoderx;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
