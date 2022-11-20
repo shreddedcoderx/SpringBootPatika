@@ -14,14 +14,7 @@
     <name>SpringBootPatika</name>
     <description>SpringBootPatika</description>
     <properties>
-        <encoding>UTF-8</encoding>
         <java.version>19</java.version>
-
-        <!--for maven-->
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <maven.compiler.target>19</maven.compiler.target>
-        <maven.compiler.source>19</maven.compiler.source>
     </properties>
     <dependencies>
         <dependency>
@@ -64,7 +57,7 @@
             <artifactId>h2</artifactId>
             <scope>runtime</scope>
         </dependency>
-        <dependency>
+<!--        <dependency>
             <groupId>com.microsoft.sqlserver</groupId>
             <artifactId>mssql-jdbc</artifactId>
             <scope>runtime</scope>
@@ -88,7 +81,7 @@
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
             <scope>runtime</scope>
-        </dependency>
+        </dependency>-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-configuration-processor</artifactId>
