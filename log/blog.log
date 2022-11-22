@@ -557,3 +557,17 @@
 2022-11-22 17:29:03.283  INFO 40044 --- [RMI TCP Connection(3)-192.168.1.96] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2022-11-22 17:29:03.284  INFO 40044 --- [RMI TCP Connection(3)-192.168.1.96] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2022-11-22 17:29:03.285  INFO 40044 --- [RMI TCP Connection(3)-192.168.1.96] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-11-22 18:13:01.948  WARN 40044 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=30m30s14ms).
+2022-11-22 18:29:22.512  WARN 40044 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m50s529ms).
+2022-11-22 18:47:51.412  WARN 40044 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m58s889ms).
+2022-11-22 19:03:49.260  WARN 40044 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m57s848ms).
+2022-11-22 19:17:48.290  WARN 40044 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13m29s48ms).
+2022-11-22 19:34:12.815  WARN 40044 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s525ms).
+2022-11-22 19:51:04.690  WARN 40044 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m51s875ms).
+2022-11-22 20:11:26.574  WARN 40044 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=19m51s838ms).
+2022-11-22 20:27:38.514  WARN 40044 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m41s931ms).
+2022-11-22 20:43:45.540  WARN 40044 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m37s17ms).
+2022-11-22 21:01:57.344  WARN 40044 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=18m11s804ms).
+2022-11-22 21:56:14.163  WARN 40044 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=53m46s809ms).
+2022-11-22 22:22:34.087  WARN 40044 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=25m49s909ms).
+2022-11-22 22:30:32.856  WARN 40044 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m58s768ms).
