@@ -1,1 +1,1 @@
-alert("Hoşgeldiniz!");
+alert("Hoşgeldiniz! 🤗");
