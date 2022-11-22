@@ -119,7 +119,7 @@ public class ThymeleafController {
                                                                        @PathVariable(name = "id", required = false) Long id,
                                                                        @RequestParam(name = "name", required = false) String name){
         if ((id != null) && (name != null)){
-            model.addAttribute("key_model1", String.format("id : %s and name : %s", id, name));
+            model.addAttribute("key_model1", String.format("id : %d and name : %s", id, name));
         } else {
             model.addAttribute("key_model1", "id ve name'i doldurunuz. 🏁");
         }
