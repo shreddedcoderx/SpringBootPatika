@@ -104,7 +104,7 @@ public class ThymeleafController {
     
     @GetMapping({"/thymeleaf8"})
     public String getTyhmeleaf8ModelObjectRequestParam(Model model,
-                                                       @RequestParam(name = "id", required = true) Long id,
+                                                       @RequestParam(name = "id") Long id,
                                                        @RequestParam(name="name") String name){
         if ((id != null) && (name != null)){
             model.addAttribute("key_model1", String.format("id : %s and name : %s", id, name));
@@ -112,6 +112,18 @@ public class ThymeleafController {
             model.addAttribute("key_model1", "id ve name'i doldurunuz.");
         }
         return "thymeleaf8";
+    }
+
+    @GetMapping({"/thymeleaf81/{id}","/thymeleaf81" })
+    public String getThymeleaf81ModelObjectRequestParamAndPathVariable(Model model,
+                                                                       @PathVariable(name = "id", required = false) Long id,
+                                                                       @RequestParam(name = "name", required = false) String name){
+        if ((id != null) && (name != null)){
+            model.addAttribute("key_model1", String.format("id : %s and name : %s", id, name));
+        } else {
+            model.addAttribute("key_model1", "id ve name'i doldurunuz. 🏁");
+        }
+        return "thymeleaf9";
     }
 
 
