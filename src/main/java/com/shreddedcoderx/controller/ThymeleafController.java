@@ -4,6 +4,7 @@ import com.shreddedcoderx.dto.ProductDto;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.ArrayList;
@@ -11,6 +12,12 @@ import java.util.List;
 
 @Controller
 public class ThymeleafController {
+
+    // option : root {}
+    @GetMapping({"/", "index"})
+    public String index(){
+        return "index";
+    }
 
     // http://127.0.0.1:8080/thymeleaf1
     @GetMapping("/thymeleaf1")
@@ -82,4 +89,20 @@ public class ThymeleafController {
         model.addAttribute("key_model2", productDtoList);
         return "thymeleaf6";
     }
+
+    // http://127.0.0.1:8080/thymeleaf7
+    @GetMapping({"/thymeleaf7/{id}", "/thymeleaf7/"})
+    public String getTyhmeleaf7ModelObject(Model model, @PathVariable(name = "id", required = false) Long id) {
+
+        if (id != null){
+            model.addAttribute("key_model1", "id : " + id);
+        } else {
+            model.addAttribute("key_model1", "id bulunamadı.");
+        }
+      /*  ProductDto productDto = ProductDto.builder()
+                .productId(id).productName("Magic Keyboard Apple").productPrice(Double.valueOf(2000)).build();*/
+
+        return "thymeleaf7";
+    }
+
 }
