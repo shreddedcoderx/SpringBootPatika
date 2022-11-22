@@ -47,7 +47,7 @@ public class ThymeleafController {
     public String getTyhmeleaf5ModelObject(Model model) {
         model.addAttribute("key_model1", "text");
         ProductDto productDto = ProductDto.builder()
-                .productId(1L).productName("Magic Keyboard Apple").productPrice(Double.valueOf(2000)).build();
+                .productId(1L).productName("Magic Keyboard Apple").productPrice(2000.0).build();
 
         model.addAttribute("key_model2", productDto);
         return "thymeleaf5";
@@ -60,23 +60,23 @@ public class ThymeleafController {
         ProductDto productDto = ProductDto.builder()
                 .productId(1L)
                 .productName("Magic Keyboard Apple")
-                .productPrice(Double.valueOf(2000)).build();
+                .productPrice(2000.0).build();
 
 
         ProductDto productDto2 = ProductDto.builder()
                 .productId(2L)
                 .productName("Magic Mouse Apple")
-                .productPrice(Double.valueOf(1500)).build();
+                .productPrice(1500.0).build();
 
         ProductDto productDto3 = ProductDto.builder()
                 .productId(3L)
                 .productName("Macbook Apple")
-                .productPrice(Double.valueOf(25000)).build();
+                .productPrice(25000.0).build();
 
         ProductDto productDto4 = ProductDto.builder()
                 .productId(4L)
                 .productName("Magic TrackPad Apple")
-                .productPrice(Double.valueOf(4000)).build();
+                .productPrice(4000.0).build();
 
         List<ProductDto> productDtoList = new ArrayList<>();
         productDtoList.add(productDto);
@@ -103,7 +103,7 @@ public class ThymeleafController {
     }
     
     @GetMapping({"/thymeleaf8"})
-    public String getTyhmeleaf8ModelObjectRequestParam(Model model, @RequestParam(name = "id", required = false, defaultValue = "0") Long id){
+    public String getTyhmeleaf8ModelObjectRequestParam(Model model, @RequestParam(name = "id", required = true) Long id){
         if ((id != null) && (id != 0)){
             model.addAttribute("key_model1", "id : " + id);
         } else if (id == 0) {
