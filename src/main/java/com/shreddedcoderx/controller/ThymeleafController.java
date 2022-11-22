@@ -103,13 +103,13 @@ public class ThymeleafController {
     }
     
     @GetMapping({"/thymeleaf8"})
-    public String getTyhmeleaf8ModelObjectRequestParam(Model model, @RequestParam(name = "id", required = true) Long id){
-        if ((id != null) && (id != 0)){
-            model.addAttribute("key_model1", "id : " + id);
-        } else if (id == 0) {
-            model.addAttribute("key_model1", "Default Değer Geldi.");
+    public String getTyhmeleaf8ModelObjectRequestParam(Model model,
+                                                       @RequestParam(name = "id", required = true) Long id,
+                                                       @RequestParam(name="name") String name){
+        if ((id != null) && (name != null)){
+            model.addAttribute("key_model1", String.format("id : %s and name : %s", id, name));
         } else {
-            model.addAttribute("key_model1", "id bulunamadı.");
+            model.addAttribute("key_model1", "id ve name'i doldurunuz.");
         }
         return "thymeleaf8";
     }
